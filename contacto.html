@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor y Asociados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-gray-200 text-gray-900 flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center px-4 sm:px-10">
+            <!-- Logo o nombre de la empresa -->
+            <h1 class="text-xl font-bold">Victor y Asociados</h1>
+
+            <!-- Botón de menú para móviles -->
+            <button id="menu-toggle" class="sm:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+
+            <ul class="hidden sm:flex sm:space-x-4">
+                <li><a href="index.html" class="hover:underline block sm:inline">Inicio</a></li>
+                <li><a href="nosotros.html" class="hover:underline block sm:inline">Nosotros</a></li>
+                <li><a href="producto.html" class="hover:underline block sm:inline">Producto</a></li>
+                <li><a href="contacto.html" class="hover:underline block sm:inline">Contacto</a></li>
+            </ul>
+
+            <ul id="menu"
+                class="absolute top-16 left-0 w-full bg-blue-600 text-white flex flex-col items-center space-y-4 py-4 sm:static sm:flex sm:flex-row sm:space-x-4 sm:py-0 sm:w-auto sm:opacity-100 sm:transform-none sm:relative menu-hidden sm:hidden">
+                <li><a href="index.html" class="hover:underline block sm:inline">Inicio</a></li>
+                <li><a href="nosotros.html" class="hover:underline block sm:inline">Nosotros</a></li>
+                <li><a href="producto.html" class="hover:underline block sm:inline">Producto</a></li>
+                <li><a href="contacto.html" class="hover:underline block sm:inline">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mx-auto my-10 bg-white shadow-lg rounded-lg flex flex-col md:flex-row max-w-2xl h-[600px]">
+        <!-- Sección del formulario -->
+        <div class="w-full xl:w-1/2 p-6 flex flex-col justify-center order-1 md:order-1">
+            <h2 class="text-2xl font-semibold mb-4">Contáctanos</h2>
+            <p class="mb-6">Si tienes alguna consulta, completa el siguiente formulario y nos pondremos en contacto
+                contigo.</p>
+    
+            <form class="rounded-lg">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
+                    <input type="text" id="name" name="name" class="mt-1 p-2 w-full border rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" class="mt-1 p-2 w-full border rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 p-2 w-full border rounded-lg"
+                        required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 w-full">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    
+        <!-- Sección de la imagen -->
+        <div class="w-full lg:w-1/2 h-full order-2 md:order-2 lg:block hidden lg:flex">
+            <img src="img/client.jpg" alt="Cliente satisfecho" class="w-full h-full object-cover rounded-r-lg">
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center py-4 mt-10 w-full">
+        <p>&copy; 2025 Victor y Asociados - Todos los derechos reservados</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

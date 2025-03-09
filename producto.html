@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor y Asociados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-gray-200 text-gray-900 flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center px-4 sm:px-10">
+            <!-- Logo o nombre de la empresa -->
+            <h1 class="text-xl font-bold">Victor y Asociados</h1>
+
+            <!-- Botón de menú para móviles -->
+            <button id="menu-toggle" class="sm:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+
+            <ul class="hidden sm:flex sm:space-x-4">
+                <li><a href="index.html" class="hover:underline block sm:inline">Inicio</a></li>
+                <li><a href="nosotros.html" class="hover:underline block sm:inline">Nosotros</a></li>
+                <li><a href="producto.html" class="hover:underline block sm:inline">Producto</a></li>
+                <li><a href="contacto.html" class="hover:underline block sm:inline">Contacto</a></li>
+            </ul>
+
+            <ul id="menu"
+                class="absolute top-16 left-0 w-full bg-blue-600 text-white flex flex-col items-center space-y-4 py-4 sm:static sm:flex sm:flex-row sm:space-x-4 sm:py-0 sm:w-auto sm:opacity-100 sm:transform-none sm:relative menu-hidden sm:hidden">
+                <li><a href="index.html" class="hover:underline block sm:inline">Inicio</a></li>
+                <li><a href="nosotros.html" class="hover:underline block sm:inline">Nosotros</a></li>
+                <li><a href="producto.html" class="hover:underline block sm:inline">Producto</a></li>
+                <li><a href="contacto.html" class="hover:underline block sm:inline">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="container my-10 px-4 sm:px-10">
+
+        <h2 class="text-4xl font-bold text-center mb-8"> Proceso de Contratación</h2>
+        <p class="text-xl text-gray-700 mb-6">
+            En <strong class="text-blue-600">Victor y Asociados</strong>, ofrecemos un <strong
+                class="text-blue-600">sistema de gestión de mantenimiento</strong> diseñado para optimizar la <strong
+                class="text-blue-600">infraestructura educativa</strong>. Nuestro proceso de contratación es sencillo y
+            transparente, enfocado en brindar <strong class="text-blue-600">soluciones tecnológicas</strong> que
+            garanticen la <strong class="text-blue-600">eficiencia operativa</strong> y la <strong
+                class="text-blue-600">optimización de costos</strong>.
+        </p>
+
+
+    </section>
+
+    <section class="mt-8 px-4 py-8"> <!-- Reduje el padding de la sección -->
+        <h3 class="text-3xl font-bold mb-6 text-center">Pasos de Contratación</h3>
+        <!-- Reduje el tamaño del título -->
+
+        <!-- Línea de tiempo combinada con tarjetas -->
+        <ol class="relative border-s-4 border-blue-500 max-w-lg mx-auto">
+            <!-- Reduje el ancho máximo de la línea de tiempo -->
+            <!-- Paso 1: Consulta -->
+            <li class="mb-8 ms-6"> <!-- Reduje el margen inferior -->
+                <!-- Punto de la línea de tiempo -->
+                <span
+                    class="absolute flex items-center justify-center w-6 h-6 bg-blue-300 rounded-full -start-3 ring-8 ring-white">
+                    <svg class="w-2.5 h-2.5 text-blue-500 dark:text-blue-300" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                    </svg>
+                </span>
+
+                <!-- Tarjeta dentro del paso -->
+                <div class="bg-blue-50 p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold text-blue-500 mb-2">Consulta Inicial</h3>
+                    <!-- Reduje el tamaño del título -->
+                    <p class="text-gray-700 text-sm">Nos contactas para discutir tus necesidades y objetivos
+                        específicos.</p>
+                    <img src="img/consultation.svg" alt="Consulta" class="h-16 mx-auto mt-2">
+                    <!-- Reduje el tamaño de la imagen -->
+                </div>
+            </li>
+
+            <!-- Paso 2: Elaboración de Propuesta -->
+            <li class="mb-8 ms-6">
+                <!-- Punto de la línea de tiempo -->
+                <span
+                    class="absolute flex items-center justify-center w-6 h-6 bg-blue-300 rounded-full -start-3 ring-8 ring-white">
+                    <svg class="w-2.5 h-2.5 text-blue-500 dark:text-blue-300" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                    </svg>
+                </span>
+
+                <!-- Tarjeta dentro del paso -->
+                <div class="bg-blue-50 p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold text-blue-500 mb-2">Elaboración de Propuesta</h3>
+                    <p class="text-gray-700 text-sm">Preparamos una propuesta personalizada con costos y plazos
+                        detallados.</p>
+                    <img src="img/report.svg" alt="Propuesta" class="h-16 mx-auto mt-2">
+                </div>
+            </li>
+
+            <!-- Paso 3: Firma del Contrato -->
+            <li class="mb-8 ms-6">
+                <!-- Punto de la línea de tiempo -->
+                <span
+                    class="absolute flex items-center justify-center w-6 h-6 bg-blue-300 rounded-full -start-3 ring-8 ring-white">
+                    <svg class="w-2.5 h-2.5 text-blue-500 dark:text-blue-300" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                    </svg>
+                </span>
+
+                <!-- Tarjeta dentro del paso -->
+                <div class="bg-blue-50 p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold text-blue-500 mb-2">Firma del Contrato</h3>
+                    <p class="text-gray-700 text-sm">Se formaliza el acuerdo con la firma del contrato y términos de
+                        servicio.</p>
+                    <img src="img/signature.svg" alt="Firma del contrato" class="h-16 mx-auto mt-2">
+                </div>
+            </li>
+
+            <!-- Paso 4: Implementación -->
+            <li class="mb-8 ms-6">
+                <!-- Punto de la línea de tiempo -->
+                <span
+                    class="absolute flex items-center justify-center w-6 h-6 bg-blue-300 rounded-full -start-3 ring-8 ring-white">
+                    <svg class="w-2.5 h-2.5 text-blue-500 dark:text-blue-300" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                    </svg>
+                </span>
+
+                <!-- Tarjeta dentro del paso -->
+                <div class="bg-blue-50 p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold text-blue-500 mb-2">Implementación del Servicio</h3>
+                    <p class="text-gray-700 text-sm">Iniciamos la configuración y ejecución del servicio de
+                        mantenimiento.</p>
+                    <img src="img/service.svg" alt="Implementación" class="h-16 mx-auto mt-2">
+                </div>
+            </li>
+
+            <!-- Paso 5: Seguimiento y Optimización -->
+            <li class="ms-6">
+                <!-- Punto de la línea de tiempo -->
+                <span
+                    class="absolute flex items-center justify-center w-6 h-6 bg-blue-300 rounded-full -start-3 ring-8 ring-white">
+                    <svg class="w-2.5 h-2.5 text-blue-500 dark:text-blue-300" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                    </svg>
+                </span>
+
+                <!-- Tarjeta dentro del paso -->
+                <div class="bg-blue-50 p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold text-blue-500 mb-2">Seguimiento y Optimización</h3>
+                    <p class="text-gray-700 text-sm">Monitoreamos el desempeño y optimizamos procesos para mayor
+                        eficiencia.</p>
+                    <img src="img/analysis.svg" alt="Seguimiento" class="h-16 mx-auto mt-2">
+                </div>
+            </li>
+            <li class="ms-6">
+                <span
+                    class="absolute flex items-center justify-center w-6 h-6 bg-blue-300 rounded-full -start-3 ring-8 ring-white">
+                    <svg class="w-2.5 h-2.5 text-blue-500 dark:text-blue-300" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                    </svg>
+                </span>
+            </li>
+        </ol>
+    </section>
+
+
+
+    <main class="container mx-auto my-10 p-6 flex flex-col space-y-6">
+        <h2 class="text-4xl font-bold mb-8 text-center">Planes y Características</h2>
+
+        <p class="text-xl text-gray-700 mb-6">
+            Tlalticpactli - SMIF es un <strong class="text-blue-600">sistema de gestión de mantenimiento
+                innovador</strong> diseñado para instituciones educativas. Ofrecemos planes flexibles y personalizados
+            que se adaptan a las necesidades de cada organización, garantizando <strong class="text-blue-600">eficiencia
+                operativa</strong>, <strong class="text-blue-600">reducción de costos</strong> y un entorno seguro para
+            estudiantes y personal.
+        </p>
+
+        <!-- Sección de Planes -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Tarjeta Básica -->
+            <div class="bg-white shadow-lg rounded-lg p-4 text-center bg-gray-100">
+                <h3 class="text-xl font-semibold text-blue-600">Plan Básico</h3>
+                <p class="text-gray-700 mt-2">Ideal para pequeñas empresas o instituciones.</p>
+                <ul class="mt-4 space-y-2 text-gray-600">
+                    <li>&#10003; Gestión de mantenimiento</li>
+                    <li>&#10003; Reportes básicos</li>
+                    <li>&#10003; Hasta 10 usuarios</li>
+                </ul>
+                <p class="mt-4 text-lg font-bold text-blue-700">$99/mes</p>
+                <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Elegir</button>
+            </div>
+
+            <!-- Tarjeta Premium -->
+            <div class="bg-white shadow-lg rounded-lg p-4 text-center bg-gray-100">
+                <h3 class="text-xl font-semibold text-blue-600">Plan Premium</h3>
+                <p class="text-gray-700 mt-2">Perfecto para medianas y grandes empresas.</p>
+                <ul class="mt-4 space-y-2 text-gray-600">
+                    <li>&#10003; Mantenimiento preventivo y correctivo</li>
+                    <li>&#10003; Reportes avanzados</li>
+                    <li>&#10003; Hasta 50 usuarios</li>
+                    <li>&#10003; Soporte prioritario</li>
+                </ul>
+                <p class="mt-4 text-lg font-bold text-blue-700">$199/mes</p>
+                <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Elegir</button>
+            </div>
+
+            <!-- Tarjeta Empresarial -->
+            <div class="bg-white shadow-lg rounded-lg p-4 text-center bg-gray-100">
+                <h3 class="text-xl font-semibold text-blue-600">Plan Empresarial</h3>
+                <p class="text-gray-700 mt-2">Para grandes instituciones con alta demanda.</p>
+                <ul class="mt-4 space-y-2 text-gray-600">
+                    <li>&#10003; Todas las funciones del plan Premium</li>
+                    <li>&#10003; Integración con IoT</li>
+                    <li>&#10003; Dashboard avanzado</li>
+                    <li>&#10003; Usuarios ilimitados</li>
+                </ul>
+                <p class="mt-4 text-lg font-bold text-blue-700">Precio personalizado</p>
+                <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Contactar</button>
+            </div>
+        </div>
+
+
+        <!-- Características adicionales -->
+        <div class="mt-12 text-center">
+            <h3 class="text-3xl font-bold text-blue-600 mb-6">Características Clave</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold text-blue-600 mb-2">Interfaz Intuitiva</h4>
+                    <p class="text-gray-700">Diseño fácil de usar para todos los usuarios.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold text-blue-600 mb-2">Multiplataforma</h4>
+                    <p class="text-gray-700">Acceso desde cualquier dispositivo con conexión a Internet.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold text-blue-600 mb-2">Seguridad Garantizada</h4>
+                    <p class="text-gray-700">Protección de datos y cumplimiento de normativas.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold text-blue-600 mb-2">Escalabilidad</h4>
+                    <p class="text-gray-700">Crece con las necesidades de tu institución.</p>
+                </div>
+            </div>
+    </main>
+
+    <!-- Nueva Sección: Proceso de Contratación -->
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center py-4 mt-10 w-full">
+        <p>&copy; 2025 Victor y Asociados - Todos los derechos reservados</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

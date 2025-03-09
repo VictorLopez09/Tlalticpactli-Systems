@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor y Asociados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-gray-200 text-gray-900 flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center px-4 sm:px-10">
+            <!-- Logo o nombre de la empresa -->
+            <h1 class="text-xl font-bold">Victor y Asociados</h1>
+
+            <!-- Botón de menú para móviles -->
+            <button id="menu-toggle" class="sm:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+
+            <ul class="hidden sm:flex sm:space-x-4">
+                <li><a href="index.html" class="hover:underline block sm:inline">Inicio</a></li>
+                <li><a href="nosotros.html" class="hover:underline block sm:inline">Nosotros</a></li>
+                <li><a href="producto.html" class="hover:underline block sm:inline">Producto</a></li>
+                <li><a href="contacto.html" class="hover:underline block sm:inline">Contacto</a></li>
+            </ul>
+
+            <ul id="menu"
+                class="absolute top-16 left-0 w-full bg-blue-600 text-white flex flex-col items-center space-y-4 py-4 sm:static sm:flex sm:flex-row sm:space-x-4 sm:py-0 sm:w-auto sm:opacity-100 sm:transform-none sm:relative menu-hidden sm:hidden">
+                <li><a href="index.html" class="hover:underline block sm:inline">Inicio</a></li>
+                <li><a href="nosotros.html" class="hover:underline block sm:inline">Nosotros</a></li>
+                <li><a href="producto.html" class="hover:underline block sm:inline">Producto</a></li>
+                <li><a href="contacto.html" class="hover:underline block sm:inline">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mx-auto  rounded-lg flex flex-grow flex-col">
+
+        <section id="inicio" class="flex flex-col sm:flex-row items-center justify-between w-full min-h-screen">
+            <!-- Logo más pequeño -->
+            <div class="flex-1 flex items-center justify-center p-5 sm:p-10">
+                <img src="img/logo-empresa.svg" alt="Icono de arquitectura del sistema"
+                    class="w-full max-w-xs sm:max-w-sm drop-shadow-custom floating-img">
+            </div>
+
+            <!-- Texto -->
+            <div class="flex-1 text-left p-5 sm:p-10">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+                    Sobre Victor y Asociados
+                </h1>
+                <p class="text-lg text-gray-700 mb-6">
+                    Victor y Asociados es una empresa líder en el desarrollo de soluciones tecnológicas para la gestión
+                    y mantenimiento de la infraestructura educativa. Nos enfocamos en ofrecer herramientas innovadoras y
+                    accesibles que optimicen los procesos de mantenimiento, mejoren la seguridad de las
+                    instalaciones y reduzcan los costos operativos.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="container mx-auto my-10 p-6">
+            <!-- Título principal -->
+            <h2 class="text-3xl font-bold text-blue-600 text-center mb-10">Nuestra Visión y Misión</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Carta para la Visión -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="img/vision.jpg" alt="Imagen de Visión" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Nuestra Visión</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Ser la empresa de referencia en el ámbito del mantenimiento de infraestructuras educativas,
+                            proporcionando soluciones tecnológicas avanzadas que garanticen el funcionamiento óptimo de
+                            las
+                            instalaciones y el bienestar de los usuarios.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Carta para la Misión -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="img/mision.jpg" alt="Imagen de Misión" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Nuestra Misión</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Desarrollar e implementar soluciones tecnológicas innovadoras que permitan a nuestros
+                            clientes gestionar
+                            de manera eficiente y sostenible el mantenimiento de sus infraestructuras educativas,
+                            contribuyendo al
+                            desarrollo de una sociedad más segura y equitativa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto my-10 p-6">
+            <!-- Título de la sección -->
+            <h3 class="text-3xl font-bold text-blue-600 text-center mb-10">Nuestros Valores</h3>
+
+            <!-- Grid de cuadros (cards) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Cuadro 1: Calidad -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center p-6">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Calidad</h4>
+                    <p class="text-gray-700 mb-4">
+                        Nos esforzamos por ofrecer productos y servicios de la más alta calidad.
+                    </p>
+                    <img src="img/quality.jpg" alt="Imagen de Calidad" class="w-full h-40 object-cover rounded-lg">
+                </div>
+
+                <!-- Cuadro 2: Innovación -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center p-6">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Innovación</h4>
+                    <p class="text-gray-700 mb-4">
+                        Buscamos constantemente nuevas formas de mejorar y optimizar nuestros procesos.
+                    </p>
+                    <img src="img/innovation.jpg" alt="Imagen de Innovación"
+                        class="w-full h-40 object-cover rounded-lg">
+                </div>
+
+                <!-- Cuadro 3: Compromiso -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center p-6">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Compromiso</h4>
+                    <p class="text-gray-700 mb-4">
+                        Nos comprometemos a cumplir con los más altos estándares de ética y profesionalismo.
+                    </p>
+                    <img src="img/contract.jpg" alt="Imagen de Compromiso" class="w-full h-40 object-cover rounded-lg">
+                </div>
+
+                <!-- Cuadro 4: Trabajo en equipo -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center p-6">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Trabajo en equipo</h4>
+                    <p class="text-gray-700 mb-4">
+                        Fomentamos un ambiente de colaboración y respeto mutuo entre nuestros empleados.
+                    </p>
+                    <img src="img/teamwork.jpg" alt="Imagen de Trabajo en equipo"
+                        class="w-full h-40 object-cover rounded-lg">
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <section class="relative bg-[url('img/river.jpg')] bg-cover bg-center w-full py-8">
+        <!-- Filtro oscuro para mejorar la legibilidad -->
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        <!-- Contenido de la sección -->
+        <div class="container mx-auto px-6 relative z-10">
+            <!-- Primera parte: Contenido alineado a la derecha -->
+            <div class="flex justify-end">
+                <div class="max-w-2xl text-right text-white"> <!-- Alineación a la derecha y texto blanco -->
+                    <h3 class="text-3xl font-bold mb-6">¿Por qué elegirnos?</h3>
+                    <p class="text-lg leading-relaxed">
+                        En Victor y Asociados entendemos la importancia de una infraestructura educativa bien
+                        mantenida para el correcto desarrollo de las actividades académicas. Nuestro sistema, el
+                        <strong class="font-semibold">Sistema de Información para la Gestión del Mantenimiento de la
+                            Infraestructura Física (SIMIF)</strong>, ha sido diseñado para optimizar los recursos de
+                        mantenimiento, reducir tiempos de inactividad y facilitar la toma de decisiones informadas a
+                        través
+                        de reportes detallados.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Segunda parte: Contenido adicional (opcional) -->
+            <div class="mt-16 text-white"> <!-- Espacio entre las dos partes y texto blanco -->
+                <div class="mt-8">
+                    <h4 class="text-2xl font-semibold text-blue-400 mb-4">¡Anímate a probar nuestros servicios!</h4>
+                    <p class="text-lg text-gray-200">Descubre cómo podemos ayudarte a optimizar y mantener tu
+                        infraestructura de manera eficiente.</p>
+                </div>
+
+                <!-- Eslogan -->
+                <div class="mt-6">
+                    <p class="text-xl font-bold text-gray-100">
+                        "Innovación y eficiencia al servicio de tu infraestructura"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center py-4 w-full">
+        <p>&copy; 2025 Victor y Asociados - Todos los derechos reservados</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
