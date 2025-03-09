@@ -1,0 +1,120 @@
+/* styles.css */
+.drop-shadow-custom {
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+    z-index: 30;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+    height: 8px;
+    /* Altura del scrollbar */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+    background: #e5e7eb;
+    /* Color de fondo */
+    border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    /* Color del scroll */
+    border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+    /* Color más oscuro al pasar el mouse */
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+#menu {
+    z-index: 50;
+}
+
+
+.menu-hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    display: none;
+}
+
+.menu-visible {
+    opacity: 1;
+    transform: translateY(0);
+    display: flex;
+}
+
+ul#menu li a {
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+ul#menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Fondo semitransparente */
+    transform: scale(1.05);
+    /* Ligero zoom */
+}
+
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-float {
+    animation: float 2s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 5;
+}
+
